@@ -1,0 +1,219 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07090d">
+
+  <meta
+    name="description"
+    content="AI Growth Engine: estrategia, creatividad y crecimiento empresarial impulsados por inteligencia artificial."
+  >
+
+  <title>Creative Studio — AI Growth Engine</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+
+  <script src="/app.js" defer></script>
+</head>
+
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#inicio" aria-label="AI Growth Engine, inicio">
+      AI
+      <span>GROWTH ENGINE</span>
+    </a>
+
+    <p class="section-label">WORKSPACE</p>
+
+    <nav aria-label="Navegación principal">
+      <a href="#inicio">
+        <span aria-hidden="true">⌂</span>
+        Inicio
+      </a>
+
+      <a href="#estrategia">
+        <span aria-hidden="true">◎</span>
+        Estrategia
+      </a>
+
+      <a class="active" href="#creative" aria-current="page">
+        <span aria-hidden="true">✳</span>
+        Creative Studio
+      </a>
+
+      <a href="#campanas">
+        <span aria-hidden="true">↗</span>
+        Campañas
+      </a>
+
+      <a href="#resultados">
+        <span aria-hidden="true">▥</span>
+        Resultados
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      AI Growth Engine
+      <small>Marketing intelligence platform</small>
+      <small>Creative workspace · v1.0</small>
+    </div>
+  </aside>
+
+  <main class="main" id="inicio">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">AI-POWERED MARKETING</p>
+        <h1>Creative Studio</h1>
+      </div>
+
+      <span class="status" id="system-status">
+        <span aria-hidden="true">●</span>
+        Sistema preparado
+      </span>
+    </header>
+
+    <section class="intro" id="creative">
+      <p class="eyebrow">CREATE WITH STRATEGY</p>
+
+      <h2>Convertí ideas en campañas.</h2>
+
+      <p>
+        Transformá la información de tu negocio en estrategias
+        creativas, conceptos publicitarios y acciones diseñadas
+        para alcanzar tus objetivos comerciales.
+      </p>
+    </section>
+
+    <section class="workspace" aria-label="Espacio de trabajo creativo">
+
+      <section class="panel" id="estrategia">
+        <div class="panel-heading">
+          <p class="eyebrow">01 / CAMPAIGN BRIEF</p>
+          <h2>Definí tu campaña</h2>
+          <p class="field-description">
+            Contanos qué ofrecés y qué querés conseguir.
+          </p>
+        </div>
+
+        <form id="campaign-form">
+          <label for="empresa">Empresa</label>
+          <input
+            id="empresa"
+            name="empresa"
+            type="text"
+            placeholder="Nombre de tu empresa"
+            autocomplete="organization"
+            required
+          >
+
+          <label for="sector">Sector</label>
+          <input
+            id="sector"
+            name="sector"
+            type="text"
+            placeholder="Ej. Gastronomía, tecnología"
+            required
+          >
+
+          <label for="producto">Producto o servicio</label>
+          <textarea
+            id="producto"
+            name="producto"
+            placeholder="¿Qué ofrecés y qué lo hace diferente?"
+            rows="4"
+            required
+          ></textarea>
+
+          <label for="publico">Público objetivo</label>
+          <input
+            id="publico"
+            name="publico"
+            type="text"
+            placeholder="¿A qué tipo de cliente querés llegar?"
+            required
+          >
+
+          <label for="objetivo">Objetivo comercial</label>
+          <select id="objetivo" name="objetivo" required>
+            <option value="Conseguir nuevos clientes">
+              Conseguir nuevos clientes
+            </option>
+            <option value="Aumentar las ventas">
+              Aumentar las ventas
+            </option>
+            <option value="Generar consultas">
+              Generar consultas
+            </option>
+            <option value="Fidelizar clientes">
+              Fidelizar clientes
+            </option>
+          </select>
+
+          <label for="plataforma">Plataforma principal</label>
+          <select id="plataforma" name="plataforma" required>
+            <option value="Instagram">Instagram</option>
+            <option value="TikTok">TikTok</option>
+            <option value="Facebook">Facebook</option>
+            <option value="LinkedIn">LinkedIn</option>
+            <option value="YouTube">YouTube</option>
+          </select>
+
+          <label for="tono">Estilo de comunicación</label>
+          <input
+            id="tono"
+            name="tono"
+            type="text"
+            value="Moderno y profesional"
+            placeholder="Ej. Cercano, premium, directo"
+            required
+          >
+
+          <div class="form-note">
+            <span aria-hidden="true">✳</span>
+            La propuesta se generará a partir de la información
+            que proporciones.
+          </div>
+
+          <button class="primary-button" type="submit">
+            <span class="button-label">Generar estrategia creativa</span>
+            <span class="button-arrow" aria-hidden="true">↗</span>
+          </button>
+        </form>
+      </section>
+
+      <section class="panel results-panel" id="resultados">
+        <p class="eyebrow">02 / CREATIVE OUTPUT</p>
+        <h2>Tu espacio creativo</h2>
+
+        <p class="field-description">
+          Tu propuesta aparecerá acá para que puedas revisarla.
+        </p>
+
+        <div id="result" aria-live="polite" aria-busy="false">
+          <div class="empty-state">
+            <span class="sparkle" aria-hidden="true">✳</span>
+
+            <h3>Tu próxima campaña empieza acá.</h3>
+
+            <p>
+              Completá el brief para crear una propuesta estratégica
+              adaptada a tu negocio.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <footer class="page-footer">
+      <span>AI Growth Engine</span>
+      <span>Ideas → Estrategia → Crecimiento</span>
+    </footer>
+  </main>
+</body>
+</html>
+```
