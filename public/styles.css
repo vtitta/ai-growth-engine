@@ -1002,3 +1002,79 @@ css
     flex-direction: column;
   }
 }
+
+[hidden] {
+  display: none !important;
+}
+
+.project-selector {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(145, 217, 255, 0.15);
+}
+
+.project-selector select {
+  width: 100%;
+  margin: 8px 0 12px;
+}
+
+.tool-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0;
+}
+
+.tool-tab.active {
+  border-color: #91d9ff;
+  color: #91d9ff;
+}
+
+.tool-form {
+  margin: 20px 0 30px;
+}
+
+.tool-form > label,
+#project-form > label {
+  display: block;
+  margin: 16px 0 8px;
+}
+
+.tool-form input,
+.tool-form textarea,
+.tool-form select,
+#project-form input,
+#project-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.library-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.library-list .generated-result {
+  padding: 18px;
+  border: 1px solid rgba(145, 217, 255, 0.15);
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+}
+
+.result-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.result-footer a {
+  color: #91d9ff;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

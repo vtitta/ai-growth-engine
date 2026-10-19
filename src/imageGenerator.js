@@ -11,7 +11,7 @@ const openai = new OpenAI({
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const generatedDir = path.join(__dirname, "../../generated");
+const generatedDir = path.join(__dirname, "../generated");
 
 export async function generarImagen(datos) {
   const descripcion =

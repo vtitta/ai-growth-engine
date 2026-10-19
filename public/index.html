@@ -5,46 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#07090d">
-
-  <meta
-    name="description"
-    content="AI Growth Engine: estrategia, creatividad y crecimiento empresarial impulsados por inteligencia artificial."
-  >
-
+  <meta name="description" content="AI Growth Engine: estrategia, creatividad y crecimiento empresarial con inteligencia artificial.">
   <title>Creative Studio — AI Growth Engine</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="/styles.css">
-
   <script src="/app.js" defer></script>
 </head>
-
 <body>
   <aside class="sidebar">
-    <a class="brand" href="#inicio" aria-label="AI Growth Engine, inicio">
-      AI
-      <span>GROWTH ENGINE</span>
-    </a>
-
+    <a class="brand" href="/inicio.html">AI <span>GROWTH ENGINE</span></a>
     <p class="section-label">WORKSPACE</p>
-
     <nav aria-label="Navegación principal">
-  <a href="/inicio.html">
-    <span aria-hidden="true">⌂</span>
-    Inicio
-  </a>
-
-  <a class="active" href="/#creative" aria-current="page">
-    <span aria-hidden="true">✳</span>
-    Creative Studio
-  </a>
-</nav>
-
+      <a href="/inicio.html"><span aria-hidden="true">⌂</span> Inicio</a>
+      <a class="active" href="/index.html"><span aria-hidden="true">✳</span> Creative Studio</a>
+    </nav>
     <div class="sidebar-footer">
       AI Growth Engine
       <small>Marketing intelligence platform</small>
-      <small>Creative workspace · v1.0</small>
+      <small>Creative workspace · v1.1</small>
     </div>
   </aside>
 
@@ -54,144 +33,167 @@
         <p class="eyebrow">AI-POWERED MARKETING</p>
         <h1>Creative Studio</h1>
       </div>
-
-      <span class="status" id="system-status">
-        <span aria-hidden="true">●</span>
-        Sistema preparado
-      </span>
+      <span class="status" id="system-status">● Conectando...</span>
     </header>
 
     <section class="intro" id="creative">
-      <p class="eyebrow">CREATE WITH STRATEGY</p>
-
-      <h2>Convertí ideas en campañas.</h2>
-
-      <p>
-        Transformá la información de tu negocio en estrategias
-        creativas, conceptos publicitarios y acciones diseñadas
-        para alcanzar tus objetivos comerciales.
-      </p>
+      <p class="eyebrow">YOUR BUSINESS. ONE WORKSPACE.</p>
+      <h2>Tu estrategia empieza acá.</h2>
+      <p>Organizá cada negocio, creá contenido estratégico y guardá tus ideas en un solo espacio.</p>
     </section>
 
-    <section class="workspace" aria-label="Espacio de trabajo creativo">
+    <section class="panel" id="projects-panel">
+      <div class="panel-heading">
+        <p class="eyebrow">01 / BUSINESS WORKSPACE</p>
+        <h2>Proyectos</h2>
+        <p class="field-description">Cada proyecto guarda el perfil de un negocio y su biblioteca de contenido.</p>
+      </div>
 
-      <section class="panel" id="estrategia">
-        <div class="panel-heading">
-          <p class="eyebrow">01 / CAMPAIGN BRIEF</p>
-          <h2>Definí tu campaña</h2>
-          <p class="field-description">
-            Contanos qué ofrecés y qué querés conseguir.
-          </p>
-        </div>
+      <form id="project-form">
+        <label for="project-name">Nombre del proyecto / negocio</label>
+        <input id="project-name" name="nombre" placeholder="Ej. Mi marca" required maxlength="120">
 
-        <form id="campaign-form">
-          <label for="empresa">Empresa</label>
-          <input
-            id="empresa"
-            name="empresa"
-            type="text"
-            placeholder="Nombre de tu empresa"
-            autocomplete="organization"
-            required
-          >
+        <label for="project-sector">Sector</label>
+        <input id="project-sector" name="sector" placeholder="Ej. Gastronomía, moda, tecnología" required>
 
-          <label for="sector">Sector</label>
-          <input
-            id="sector"
-            name="sector"
-            type="text"
-            placeholder="Ej. Gastronomía, tecnología"
-            required
-          >
+        <label for="project-offer">Producto o servicio</label>
+        <textarea id="project-offer" name="oferta" rows="3" placeholder="Qué ofrecés y qué te diferencia" required></textarea>
 
-          <label for="producto">Producto o servicio</label>
-          <textarea
-            id="producto"
-            name="producto"
-            placeholder="¿Qué ofrecés y qué lo hace diferente?"
-            rows="4"
-            required
-          ></textarea>
+        <label for="project-audience">Público objetivo</label>
+        <input id="project-audience" name="publico" placeholder="A quién querés llegar">
 
-          <label for="publico">Público objetivo</label>
-          <input
-            id="publico"
-            name="publico"
-            type="text"
-            placeholder="¿A qué tipo de cliente querés llegar?"
-            required
-          >
+        <label for="project-differences">Diferenciadores de la marca</label>
+        <textarea id="project-differences" name="diferenciadores" rows="2" placeholder="Qué te hace diferente"></textarea>
 
-          <label for="objetivo">Objetivo comercial</label>
-          <select id="objetivo" name="objetivo" required>
-            <option value="Conseguir nuevos clientes">
-              Conseguir nuevos clientes
-            </option>
-            <option value="Aumentar las ventas">
-              Aumentar las ventas
-            </option>
-            <option value="Generar consultas">
-              Generar consultas
-            </option>
-            <option value="Fidelizar clientes">
-              Fidelizar clientes
-            </option>
-          </select>
+        <label for="project-tone">Tono de comunicación</label>
+        <input id="project-tone" name="tono" value="Moderno y profesional">
 
-          <label for="plataforma">Plataforma principal</label>
-          <select id="plataforma" name="plataforma" required>
-            <option value="Instagram">Instagram</option>
-            <option value="TikTok">TikTok</option>
-            <option value="Facebook">Facebook</option>
-            <option value="LinkedIn">LinkedIn</option>
-            <option value="YouTube">YouTube</option>
-          </select>
+        <label for="project-goal">Objetivo principal</label>
+        <input id="project-goal" name="objetivo" placeholder="Ej. Conseguir clientes y aumentar ventas">
 
-          <label for="tono">Estilo de comunicación</label>
-          <input
-            id="tono"
-            name="tono"
-            type="text"
-            value="Moderno y profesional"
-            placeholder="Ej. Cercano, premium, directo"
-            required
-          >
+        <button class="primary-button" type="submit">
+          <span class="button-label">Crear proyecto</span><span class="button-arrow">↗</span>
+        </button>
+      </form>
 
-          <div class="form-note">
-            <span aria-hidden="true">✳</span>
-            La propuesta se generará a partir de la información
-            que proporciones.
-          </div>
+      <div class="project-selector">
+        <label for="project-select">Proyecto activo</label>
+        <select id="project-select">
+          <option value="">Cargando proyectos...</option>
+        </select>
+        <div id="project-summary" class="field-description">Seleccioná o creá un proyecto para comenzar.</div>
+        <button id="delete-project" class="secondary-button" type="button" disabled>Eliminar proyecto activo</button>
+      </div>
+    </section>
 
-          <button class="primary-button" type="submit">
-            <span class="button-label">Generar estrategia creativa</span>
-            <span class="button-arrow" aria-hidden="true">↗</span>
-          </button>
-        </form>
+    <section class="panel" id="creative-tools">
+      <div class="panel-heading">
+        <p class="eyebrow">02 / CONTENT CREATION</p>
+        <h2>¿Qué querés crear?</h2>
+        <p class="field-description">Elegí un formato y la IA trabajará con el perfil del proyecto activo.</p>
+      </div>
+
+      <div class="tool-tabs">
+        <button class="secondary-button tool-tab active" type="button" data-tool="reels">Tres guiones para Reels</button>
+        <button class="secondary-button tool-tab" type="button" data-tool="post">Publicación para Instagram</button>
+        <button class="secondary-button tool-tab" type="button" data-tool="strategy">Estrategia de marketing</button>
+        <button class="secondary-button tool-tab" type="button" data-tool="library">Biblioteca</button>
+      </div>
+
+      <form id="reels-form" class="tool-form">
+        <p class="eyebrow">REELS GENERATOR</p>
+        <label for="reels-goal">Objetivo de estos Reels</label>
+        <select id="reels-goal" name="objetivoContenido">
+          <option>Conseguir nuevos clientes</option>
+          <option>Aumentar las ventas</option>
+          <option>Generar consultas</option>
+          <option>Mostrar el producto o servicio</option>
+          <option>Construir marca y confianza</option>
+        </select>
+        <label for="reels-notes">Detalles o promoción (opcional)</label>
+        <textarea id="reels-notes" name="detalles" rows="3" placeholder="Ej. Lanzamiento, promoción vigente, preguntas frecuentes..."></textarea>
+        <label for="reels-style">Estilo creativo</label>
+        <select id="reels-style" name="estilo">
+          <option>Natural y cercano</option>
+          <option>Premium y minimalista</option>
+          <option>Educativo y práctico</option>
+          <option>Enérgico y entretenido</option>
+          <option>Directo y orientado a ventas</option>
+        </select>
+        <button class="primary-button" type="submit"><span class="button-label">Generar 3 guiones completos</span><span class="button-arrow">↗</span></button>
+      </form>
+
+      <form id="post-form" class="tool-form" hidden>
+        <p class="eyebrow">INSTAGRAM POST GENERATOR</p>
+        <label for="post-goal">Objetivo de la publicación</label>
+        <select id="post-goal" name="objetivoContenido">
+          <option>Conseguir clientes</option>
+          <option>Presentar un producto o servicio</option>
+          <option>Promocionar una oferta</option>
+          <option>Educar y aportar valor</option>
+          <option>Generar interacción</option>
+        </select>
+        <label for="post-topic">Tema de la publicación</label>
+        <textarea id="post-topic" name="tema" rows="3" placeholder="Qué querés comunicar en esta publicación" required></textarea>
+        <label for="post-style">Dirección visual</label>
+        <select id="post-style" name="estiloVisual">
+          <option>Premium, minimalista y editorial</option>
+          <option>Colorida, dinámica y llamativa</option>
+          <option>Fotografía realista de producto</option>
+          <option>Moderna, tecnológica y limpia</option>
+          <option>Cálida, humana y natural</option>
+        </select>
+        <label for="post-format">Formato</label>
+        <select id="post-format" name="formato">
+          <option>Cuadrado 1:1</option>
+          <option>Vertical 4:5</option>
+        </select>
+        <button class="primary-button" type="submit"><span class="button-label">Crear publicación e imagen</span><span class="button-arrow">↗</span></button>
+      </form>
+
+      <form id="campaign-form" class="tool-form" hidden>
+        <p class="eyebrow">MARKETING STRATEGY</p>
+        <label for="empresa">Empresa</label>
+        <input id="empresa" name="empresa" required>
+        <label for="sector">Sector</label>
+        <input id="sector" name="sector" required>
+        <label for="producto">Producto o servicio</label>
+        <textarea id="producto" name="producto" rows="3" required></textarea>
+        <label for="publico">Público objetivo</label>
+        <input id="publico" name="publico" required>
+        <label for="objetivo">Objetivo comercial</label>
+        <select id="objetivo" name="objetivo">
+          <option>Conseguir nuevos clientes</option>
+          <option>Aumentar las ventas</option>
+          <option>Generar consultas</option>
+          <option>Fidelizar clientes</option>
+        </select>
+        <label for="plataforma">Plataforma principal</label>
+        <select id="plataforma" name="plataforma">
+          <option>Instagram</option><option>TikTok</option><option>Facebook</option><option>LinkedIn</option><option>YouTube</option>
+        </select>
+        <label for="tono">Estilo de comunicación</label>
+        <input id="tono" name="tono" value="Moderno y profesional" required>
+        <button class="primary-button" type="submit"><span class="button-label">Generar estrategia creativa</span><span class="button-arrow">↗</span></button>
+      </form>
+
+      <section id="library-panel" hidden>
+        <p class="eyebrow">SAVED CONTENT</p>
+        <h3>Biblioteca del proyecto</h3>
+        <div id="library-list" class="library-list"></div>
       </section>
 
-      <section class="panel results-panel" id="resultados">
-        <p class="eyebrow">02 / CREATIVE OUTPUT</p>
-        <h2>Tu espacio creativo</h2>
-
-        <p class="field-description">
-          Tu propuesta aparecerá acá para que puedas revisarla.
-        </p>
-
+      <section class="results-panel" id="resultados">
+        <p class="eyebrow">03 / CREATIVE OUTPUT</p>
+        <h2>Resultado</h2>
         <div id="result" aria-live="polite" aria-busy="false">
           <div class="empty-state">
-            <span class="sparkle" aria-hidden="true">✳</span>
-
-            <h3>Tu próxima campaña empieza acá.</h3>
-
-            <p>
-              Completá el brief para crear una propuesta estratégica
-              adaptada a tu negocio.
-            </p>
+            <span class="sparkle">✳</span>
+            <h3>Tu próxima idea empieza acá.</h3>
+            <p>Creá un proyecto y elegí una herramienta para generar contenido personalizado.</p>
           </div>
         </div>
       </section>
-
     </section>
 
     <footer class="page-footer">
